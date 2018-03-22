@@ -72,11 +72,14 @@ int display(node *temp)
 {
  if(temp==NULL)
  {
- 	cout<<"Tree is empty.";
+ 	cout<<"Tree is empty.\n";
  }
+ else
+ {
  display(temp->left);
  cout<<temp->info;
  display(temp->right);
+ }
  
  return 0;
    
